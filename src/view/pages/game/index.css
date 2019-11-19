@@ -2,4 +2,30 @@
     text-decoration: none;
     color: #fff;
     background: rgba(238, 5, 5, 0.2); 
+    text-align: center
+}
+.um1{
+    position:relative;
+	width: 300px;
+	height: 160px;
+	background-color: rgb(2, 14, 2);
+    float: left;
+    text-align: center
+}
+
+.um2{
+    position:relative;
+	width: 155px;
+	height: 160px;
+	background-color: green;
+	float: left;
+}
+
+.um3{
+    position:relative;
+	width: 300px;
+	height: 160px;
+	background-color: rgb(2, 14, 2);
+    float: left;
+    text-align: center
 }

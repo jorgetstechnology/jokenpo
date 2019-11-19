@@ -1,26 +1,39 @@
 import React, {Component} from "react";
 import Player from "../../../model/players"
 import ConfrontIcon from "./pngtree-creative-vs-metal-light-effect-font-png-image_1693090.jpg";
+import "./index.css";
 
 function Exibir (){
     return (
-        <p>Olá {localStorage.getItem("objnome")}, escolha:</p>
+        <p></p>
     );
 }
+
+var dados = {
+        partida:{
+            jogador: "hyago",
+            computador: "Computador"
+        },
+        jogadorPonto: 0,
+        computadorPonto: 0,
+        
+        
+};
 
 class App extends Component {
 
     render(){
         return (
             <div className="corpo">
-                <div>
-                    <Player/>
+                <div className="um1" >
+                    <Player partida={dados.partida.jogador} />
                 </div>
-                <div>
-                    <img src={ConfrontIcon} />
+                <div className="um2">
+                    <Exibir/>
+                    <img src={ConfrontIcon} alt="Img"/>
                 </div>
-                <div>
-                    <Player/>
+                <div className="um3">
+                    <Player partida={dados.partida.computador} />
                 </div>
             </div>
         );    
