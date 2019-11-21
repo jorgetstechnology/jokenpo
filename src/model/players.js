@@ -16,8 +16,7 @@ class App extends Component {
                 <p>Escolha: </p>    
                     <button> <img src={Pedra} alt="pedra"/> </button>
                     <button> <img src={Papel} alt="papel"/> </button> 
-                    <button> <img src={Tesoura} alt="tesoura"/> </button>
-                    <button> teste</button>
+                    <button> <img src={Tesoura} alt="tesoura"/> </button>              
                 </div>
             </div>
         );    
