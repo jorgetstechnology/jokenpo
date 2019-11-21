@@ -1,3 +1,14 @@
+.corpo{
+    width: 310px;
+    display: 500px;
+    display: block;
+    border: solid 1px #069;
+    border-radius: 19px;
+    text-align: center;
+    padding: 4px;
+    margin: auto;
+}
+
 .div{
     text-align: center
 }
@@ -6,6 +17,6 @@
     text-align: center
 }
 
-.button{
+.but{
     text-align: center
 }

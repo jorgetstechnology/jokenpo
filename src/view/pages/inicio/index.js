@@ -8,11 +8,11 @@ import {Link} from "react-router-dom";
 function App() {
   
   return (
-    <nav>
+    <nav className="corpo">
         <div className="imagem">
             <img src={Logo} alt="Imagen inicial" className="imagemInicial"/>
         </div>
-        <div className="button">
+        <div className="but">
         <button onClick={localStorage.clear()}>
            <Link to="../home/index.js" >Iniciar Jogo</Link>     
         </button>

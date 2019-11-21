@@ -1,0 +1,23 @@
+.pagina{
+    width: 310px;
+    display: 290px;
+    display: block;
+    border: solid 1px #069;
+    border-radius: 19px;
+    text-align: center;
+    padding: 4px;
+    margin: auto;
+    
+}
+
+
+  .button1 {
+    border-radius: 7px;
+    border: none;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 10px;
+  }

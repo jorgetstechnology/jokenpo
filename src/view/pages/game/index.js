@@ -25,7 +25,7 @@ class App extends Component {
 
     computer(){
         return (
-            <div className="corpo">
+            <div className="computer">
                 <p>Jogador: {this.state.nomeComputer} </p>
                 <div className="imagenss">
                 <p>Escolha: </p>    
@@ -39,9 +39,9 @@ class App extends Component {
 
     player(){
         return (
-            <div className="corpo">
+            <div className="player">
                 <p>Jogador: {this.state.nomePlayer} </p>
-                <div className="imagenss">
+                <div className="btnimage">
                     <p>Escolha: </p>    
                     <button onClick={this.escolhaPedra}> <img src={Pedra} alt="pedra"/> </button>
                     <button onClick={this.escolhaPapel}> <img src={Papel} alt="papel"/> </button> 
@@ -107,21 +107,36 @@ class App extends Component {
             return alert( "Empate");
         }
     }
-
-    render(){
-        return (
-            <div className="corpo">
-                <div className="um1" >
-                    {this.player()}
-                </div>
-                <div className="um2">
+/*
+       return (
+            <nav className="corpo">
+                <div className="pl1" >
+                     {this.player()}
+                </ div>
+                <div className="imagevs">
                     <img src={ConfrontIcon} alt="Img"/>
                 </div>
-                <div className="um3">
-                   {this.computer()}
+                <div className="cmp1">
+                {this.computer()}
                 </div>
-            </div>
-        );    
+            </nav>
+        );  
+*/
+    render(){
+       return (
+                <div className="painel">
+                    <div className="pl1" >
+                         {this.player()}
+                    </ div>
+                    <div className="imagevs">
+                        <img src={ConfrontIcon} alt="Img"/>
+                    </div>
+                    <div className="cmp1">
+                        {this.computer()}
+                     </div>
+                </div>
+           
+       );
    }
 }   
 export default App;

@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
+import "./index.css";
 
 class App extends Component {
   
@@ -19,10 +20,10 @@ class App extends Component {
   render(){
       return (
         <div className="pagina">
-          <div className="painel">
+          <div>
             <p> Digite seu nick</p>
             <input className={"nome"}/>
-            <button onClick={this.armazenar}>
+            <button className="button1" onClick={this.armazenar}>
               <Link to="../game/index.js" >
                 Começa
               </Link>

@@ -110,7 +110,7 @@ function computadorJogando() {
 var game = new Jogo("Hyago");
 game.setEscolhaPlayer(3);
 game.setEscolhaComputador(computadorJogando());
-console.log(game.getEscolhaComputador());
+console.log("Computador escolheu "+game.getEscolhaComputador());
 console.log(game.mecanics());
 
 var partida = [game.getGanhador()]
