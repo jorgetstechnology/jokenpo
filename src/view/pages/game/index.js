@@ -51,23 +51,17 @@ class App extends Component {
         ); 
     }
    
-
-    getGanhador(){
-        return this.state.ganhador;
-    }
-    
-    
     escolhaPedra = () => {
 
         this.setState({ escolhaPlayer : 1,  escolhaComputador : Math.floor(Math.random() *  3) +1});
 
         if(this.state.escolhaPlayer === 1 & this.state.escolhaComputador === 2){
             console.log("Escolha Player: "+ this.state.escolhaPlayer +" ||  Escolha Computer: "+this.state.escolhaComputador);
-            return alert( "Ganhador foi "+this.state.nomeComputer);
+            return alert( "Ganhador foi: "+this.state.nomeComputer);
             
         } else if(this.state.escolhaPlayer === 1 & this.state.escolhaComputador === 3){
             console.log("Escolha Player: "+ this.state.escolhaPlayer +" ||  Escolha Computer: "+this.state.escolhaComputador);
-            return alert( "Ganhador foi "+this.state.nomePlayer);
+            return alert( "Ganhador foi: "+this.state.nomePlayer);
            
         } else if(this.state.escolhaPlayer === 1 & this.state.escolhaComputador === 1){
             console.log("Escolha Player: "+ this.state.escolhaPlayer +" ||  Escolha Computer: "+this.state.escolhaComputador);
@@ -76,16 +70,17 @@ class App extends Component {
              
         }
     }
+
     escolhaPapel = () =>{
 
         this.setState({ escolhaPlayer : 2,  escolhaComputador : Math.floor(Math.random() *  3) +1});
 
         if(this.state.escolhaPlayer === 2 & this.state.escolhaComputador === 1){
             console.log("Escolha Player: "+ this.state.escolhaPlayer +" ||  Escolha Computer: "+this.state.escolhaComputador);
-            return alert( "Ganhador foi "+this.state.nomePlayer);
+            return alert( "Ganhador foi: "+this.state.nomePlayer);
         } else if(this.state.escolhaPlayer === 2 & this.state.escolhaComputador === 3){
             console.log("Escolha Player: "+ this.state.escolhaPlayer +" ||  Escolha Computer: "+this.state.escolhaComputador);
-            return alert( "Ganhador foi "+this.state.nomeComputer);
+            return alert( "Ganhador foi: "+this.state.nomeComputer);
         } else if(this.state.escolhaPlayer === 2 & this.state.escolhaComputador === 2){
             console.log("Escolha Player: "+ this.state.escolhaPlayer +" ||  Escolha Computer: "+this.state.escolhaComputador);
             return  alert( "Empate");
@@ -98,36 +93,22 @@ class App extends Component {
         
         if(this.state.escolhaPlayer === 3 & this.state.escolhaComputador === 1){
             console.log("Escolha Player: "+ this.state.escolhaPlayer +"||  Escolha Computer: "+this.state.escolhaComputador);
-            return alert( "Ganhador foi "+this.state.nomeComputer);
+            return alert( "Ganhador foi: "+this.state.nomeComputer);
         } else if(this.state.escolhaPlayer === 3 & this.state.escolhaComputador === 2){
             console.log("Escolha Player: "+ this.state.escolhaPlayer +"||  Escolha Computer: "+this.state.escolhaComputador);
-            return alert( "Ganhador foi "+this.state.nomePlayer);
+            return alert( "Ganhador foi: "+this.state.nomePlayer);
         } else if(this.state.escolhaPlayer === 3 & this.state.escolhaComputador === 3){
             console.log("Escolha Player: "+ this.state.escolhaPlayer +"||  Escolha Computer: "+this.state.escolhaComputador);
             return alert( "Empate");
         }
     }
-/*
-       return (
-            <nav className="corpo">
-                <div className="pl1" >
-                     {this.player()}
-                </ div>
-                <div className="imagevs">
-                    <img src={ConfrontIcon} alt="Img"/>
-                </div>
-                <div className="cmp1">
-                {this.computer()}
-                </div>
-            </nav>
-        );  
-*/
+
     render(){
        return (
                 <div className="painel">
                     <div className="pl1" >
                          {this.player()}
-                    </ div>
+                    </div>
                     <div className="imagevs">
                         <img src={ConfrontIcon} alt="Img"/>
                     </div>
